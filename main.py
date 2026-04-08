@@ -123,7 +123,7 @@ def auto_check():
 # --- ИНТЕРФЕЙС ---
 @bot.message_handler(commands=['start'])
 def start(m):
-    bot.send_message(m.chat.id, "🔍 Введи номер своей группы (5а или 5б):", reply_markup=types.ReplyKeyboardRemove())
+    bot.send_message(m.chat.id, "🔍 Введи номер своей группы:", reply_markup=types.ReplyKeyboardRemove())
 
 @bot.message_handler(func=lambda m: m.text in ["Сегодня", "Завтра", "Сменить группу"])
 def menu(m):
